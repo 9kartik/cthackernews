@@ -1,6 +1,6 @@
 *{
 	font-family: monospace;
-	font-size:1rem;
+	font-size:1.2rem;
 }
 body{
 	background:black;
@@ -79,6 +79,7 @@ footer>div{
 #pageDets{
 	flex:1;
 	color:white;
+	font-weight: bolder;
 }
 button {
     background: grey;
