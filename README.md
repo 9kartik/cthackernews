@@ -1,2 +1,1 @@
 "# cthackernews" 
-gh-pages
