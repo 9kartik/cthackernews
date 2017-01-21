@@ -5,14 +5,21 @@
 	</head>
 	<body>
 	<div class="contHor">
-		<div>
+		<div class="header">
 			Hacker News
 		</div>
 	</div>
 	<div class="contHor">
-		<i ></i>
+		<i style="float:right">
+			<i class="fa fa-search"></i>
+		</i>	
 		<input type="text" placeholder="Search By" class="inpClass">
-		<i class="fa fa-search"></i>		
+		<i ><select name="" id="pgSize" onchange="pageSize=pgSize.options[pgSize.selectedIndex].value;changePageSize()">
+			<option value="10" selected="selected">Page-size = 10</option>
+			<option value="25">Page-size = 25</option>
+			<option value="50">Page-size = 50</option>
+		</select></i>
+		
 	</div>
 		<div id="xid" class="contVer">
 			<div class="contHor">
@@ -29,144 +36,32 @@
 				</a>
 				<i></i>
 			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
-			<div class="contHor">
-				<i></i>
-				<a target="_blank">
-					<div class="dets">
-						<div class="fa fa-star">
-						</div>
-						<div class="fa fa-comment">
-						</div>
-						<div class="user">
-						</div>
-					</div>
-				</a>
-				<i></i>
-			</div>
+			
 		</div>
 	</body>
 	<footer>
-		<span><button href="" id="first"><|</button></span>
-		<span><button href="" id="previous"><</button></span>
-		<span><button href="" id="1">1</button></span>
-		<span><button href="" id="2">2</button></span>
-		<span><button href="" id="3">3</button></span>
-		<span><button href="" id="4">4</button></span>
-		<span><button href="" id="5">5</button></span>
-		<span><button href="" id="next">></button></span>
-		<span><button href="" id="last">|></button></span>
+		<i></i>
+		<div>
+			<span id="pageDets">
+			</span>
+			<span class="nms">
+				<span><button href="" id="first"><|</button></span>
+				<span><button href="" id="previous"><</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="1">1</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="2">2</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="3">3</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="4">4</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="5">5</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="6">6</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="7">7</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="8">8</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="9">9</button></span>
+				<span><button href="" class="btn" onclick="page=+this.id;showPage()" id="10">10</button></span>
+				<span><button href="" id="next">></button></span>
+				<span><button href="" id="last">|></button></span>
+			</span>
+		</div>
+		<i></i>
 	</footer>
 	<script src="js/results.json"></script>
 	<script src="js/scripts.js"></script>

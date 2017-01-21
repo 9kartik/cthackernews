@@ -2,6 +2,13 @@
 	font-family: monospace;
 	font-size:1rem;
 }
+body{
+	background:black;
+}
+.header{
+	color:white;
+	border-bottom:1px solid white;
+}
 .contHor{
 	display: flex;
 	flex-direction: horizontal;
@@ -14,7 +21,7 @@
 .contHor a{
 	display: block;
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 .contHor a:visited{
 	color:grey;
@@ -26,7 +33,7 @@
 	background: lightgrey
 }
 .contHor>div{
-	border-bottom:1px solid black;
+	border-bottom:1px solid white;
 	font-size:1.5rem;
 	text-align: center;
 	font-weight: bolder;
@@ -38,16 +45,63 @@
 	display: flex;
 	flex-direction: column;
 }
+input.inpClass{
+	background: transparent;
+}
 input.inpClass:focus {
     outline: none;
+    color:white;
 }
 .dets{
 	font-size: .5rem;
 }
-footer{
-	text-align: center;
-}
 .user{
 	font-size: 1rem;
 	float:right;
+}
+footer{
+	display: flex;
+	flex-direction: horizontal;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	background: rgba(255,255,255,0.3);
+}
+footer>i{
+	flex:1;
+}
+footer>div{
+	flex:9;
+	display: flex;
+	flex-direction: horizontal;
+}
+
+#pageDets{
+	flex:1;
+	color:white;
+}
+button {
+    background: grey;
+    color:black;
+    border: 1px solid darkgrey;
+    border-radius: 0em;
+    }
+button:hover{
+	cursor: pointer;
+	background: white;
+	color:black;
+}
+.focus{
+	color:white;
+	background: black;
+}
+.fa-star{
+	color:#ff9800;
+}
+.fa-comment{
+	color:#8bc34a;
+}
+.fa-search{
+	float:right;
+	color:white;
 }
