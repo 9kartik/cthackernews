@@ -65,7 +65,8 @@ footer{
 	width:100%;
 	position: fixed;
 	bottom:0;
-	background: rgba(255,255,255,0.3);
+	background: rgba(255,255,255,0.7);
+	padding:1em 0 1em;
 }
 footer>i{
 	flex:1;
@@ -78,7 +79,7 @@ footer>div{
 
 #pageDets{
 	flex:1;
-	color:white;
+	color:#323232;
 	font-weight: bolder;
 }
 button {
@@ -105,4 +106,7 @@ button:hover{
 .fa-search{
 	float:right;
 	color:white;
+}
+#xid{
+	padding-bottom: 3em;
 }
